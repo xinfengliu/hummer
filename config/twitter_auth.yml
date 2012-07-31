@@ -4,6 +4,8 @@ development:
   oauth_consumer_secret: <fill in your consumer secret here>
   base_url: "http://twitter.com"
   #base_url: "https://api/twitter.com" #doesn't work with current oauth client code
+  #proxy_host: <your proxy host>
+  #proxy_port: <porxy port>
   authorize_path: "/oauth/authenticate"
   api_timeout: 10
   remember_for: 1400 # days
@@ -17,6 +19,8 @@ test:
   api_timeout: 10
   remember_for: 14 # days
   oauth_callback: "http://localhost:3000/oauth_callback"
+  #proxy_host: <your proxy host>
+  #proxy_port: <porxy port>
 production:
   strategy: oauth
   oauth_consumer_key: <fill in your consumer key here>
@@ -25,4 +29,6 @@ production:
   base_url: "https://twitter.com"
   api_timeout: 10
   remember_for: 1400 # days
+  #proxy_host: <your proxy host>
+  #proxy_port: <porxy port>
   oauth_callback: "http://<yourapp>-<yourdomain>.rhcloud.com/oauth_callback"
