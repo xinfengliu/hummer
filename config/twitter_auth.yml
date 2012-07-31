@@ -1,7 +1,7 @@
 development:
   strategy: oauth
-  oauth_consumer_key: OH5RJ4LAMp2D34bZ4blpg
-  oauth_consumer_secret: 5Jw21WzpWf5idb9YWRvRCXpNSzugxMPbfe8o5HBOLDg
+  oauth_consumer_key: <fill in your consumer key here>
+  oauth_consumer_secret: <fill in your consumer secret here>
   base_url: "http://twitter.com"
   #base_url: "https://api/twitter.com" #doesn't work with current oauth client code
   authorize_path: "/oauth/authenticate"
@@ -19,10 +19,10 @@ test:
   oauth_callback: "http://localhost:3000/oauth_callback"
 production:
   strategy: oauth
-  oauth_consumer_key: OH5RJ4LAMp2D34bZ4blpg
-  oauth_consumer_secret: 5Jw21WzpWf5idb9YWRvRCXpNSzugxMPbfe8o5HBOLDg
+  oauth_consumer_key: <fill in your consumer key here>
+  oauth_consumer_secret: <fill in your consumer secret here>
   authorize_path: "/oauth/authenticate"
   base_url: "https://twitter.com"
   api_timeout: 10
   remember_for: 1400 # days
-  oauth_callback: "http://hummer-lxf.rhcloud.com/oauth_callback"
+  oauth_callback: "http://<yourapp>-<yourdomain>.rhcloud.com/oauth_callback"
