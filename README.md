@@ -36,7 +36,7 @@ Support proxy (when you don't deploy it in the public cloud).
      git push
      ```
 
-1. Visit http://<yourapp>-<yourdomain>.rhcloud.com
+1. Visit http://yourapp-yourdomain.rhcloud.com
 
 ###Acknowledgement###
 In fact, I wrote this simple app in 2009 and at that time it leveraged https://github.com/mbleigh/twitter-auth. Since twitter-auth hasn't been updated since 2009, it is not compatible with rails 3, so for now I integrated some codes directly to my source repository.
