@@ -1,0 +1,6 @@
+<% if logged_in? %>
+  <%= @user_name %>: &nbsp
+  <%= link_to "Favorites", :controller => "user", :action => "favorites", :user_name => @user_name %> | 
+  <%= link_to "Lists", :controller => "lists", :action => "index", :user_name => @user_name %>  
+<% end %>
+

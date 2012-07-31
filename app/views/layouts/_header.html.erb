@@ -1,0 +1,11 @@
+<% if logged_in? %>
+<div id="header">
+  Welcome <b> <%= current_user.login %> </font></b>! &nbsp
+  <%= link_to "Home", root_url %> | 
+  <%= link_to "Profile", :controller => "user", :action => "timeline", :user_name => current_user.login %> | 
+  <%= link_to "Favorites", :controller => "user", :action => "favorites", :user_name => current_user.login %> | 
+  <%= link_to "Lists", :controller => "lists", :action => "index", :user_name => current_user.login %> | 
+  <%= link_to "Log out", logout_path %>
+</div>
+<% end %>
+

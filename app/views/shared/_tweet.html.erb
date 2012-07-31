@@ -1,0 +1,10 @@
+<li class="tweet">
+  <span class="profile-image">
+   <%= image_tag(tweet['user']['profile_image_url'], :size => '48x48') %>  
+  </span>
+  <span class="tweet-content">
+  <%= link_to tweet['user']['screen_name'] + ':', '/' + tweet['user']['screen_name'], :target => '_blank' %> <%= h tweet['text'] %> 
+  <br>
+  <span class="entry-meta"><%= time_ago_in_words(tweet['created_at']) %> ago </span>
+  </span> 
+</li>

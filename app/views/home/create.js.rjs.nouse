@@ -1,0 +1,2 @@
+page.insert_html :top, :tweets, {:partial => "shared/tweet", :object => @tweet}
+page[@tweet].visual_effect :highlight

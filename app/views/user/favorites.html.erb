@@ -1,0 +1,8 @@
+<% title(@user_name + " favorites", true) %>
+<ul id='tweets'>  
+  <%=render :partial => "shared/tweet", :collection => @tweets %>
+</ul>  
+
+<div id="pagination">
+<%= link_to " More ", :action => "favorites", :page_no => @page_no  %>
+</div>

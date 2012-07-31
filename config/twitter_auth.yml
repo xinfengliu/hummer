@@ -1,0 +1,28 @@
+development:
+  strategy: oauth
+  oauth_consumer_key: OH5RJ4LAMp2D34bZ4blpg
+  oauth_consumer_secret: 5Jw21WzpWf5idb9YWRvRCXpNSzugxMPbfe8o5HBOLDg
+  base_url: "http://twitter.com"
+  #base_url: "https://api/twitter.com" #doesn't work with current oauth client code
+  authorize_path: "/oauth/authenticate"
+  api_timeout: 10
+  remember_for: 1400 # days
+  oauth_callback: "http://localhost:3000/oauth_callback"
+test:
+  strategy: oauth
+  oauth_consumer_key: testkey
+  oauth_consumer_secret: testsecret
+  base_url: "https://twitter.com"
+  authorize_path: "/oauth/authenticate"
+  api_timeout: 10
+  remember_for: 14 # days
+  oauth_callback: "http://localhost:3000/oauth_callback"
+production:
+  strategy: oauth
+  oauth_consumer_key: OH5RJ4LAMp2D34bZ4blpg
+  oauth_consumer_secret: 5Jw21WzpWf5idb9YWRvRCXpNSzugxMPbfe8o5HBOLDg
+  authorize_path: "/oauth/authenticate"
+  base_url: "https://twitter.com"
+  api_timeout: 10
+  remember_for: 1400 # days
+  oauth_callback: "http://hummer-lxf.rhcloud.com/oauth_callback"

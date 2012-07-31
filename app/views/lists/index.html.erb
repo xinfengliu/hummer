@@ -1,0 +1,8 @@
+<% title(@user_name + ' Lists', true) %>
+<ul id='lists'>  
+<% for list in @lists %>
+  <li>
+  <%= link_to list['name'], '/' + @user_name + '/' + list['slug'] %> 
+  </li>
+<% end %>
+</ul>  

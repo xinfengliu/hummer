@@ -1,0 +1,10 @@
+<ul id='tweets'>
+
+   <%= render :partial => "shared/tweet", :collection => @tweets %>
+
+
+</ul>
+
+<div id="pagination">
+<%= link_to " More ", {:action => "timeline", :page_no => @page_no } %>
+</div>

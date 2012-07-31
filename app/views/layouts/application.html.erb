@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+  <head>
+    <title><%= @title || "Untitled" %></title>
+    <%= stylesheet_link_tag 'application', media: "all"  %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <%= render :partial => "layouts/header" %> 
+    <div id="container">
+      <%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+      
+      <%- if show_title? -%>
+        <h2><%= @title %></h2>
+        <% unless current_user.login == @user_name %>
+           <p class="user_header"> <%= render :partial => "layouts/user_header" %> </p>
+        <% end %>
+      <%- end -%>
+      
+      <%= yield %>
+
+    </div>
+
+  </body>
+</html>

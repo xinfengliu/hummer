@@ -1,0 +1,8 @@
+<% if logged_in? %>
+<%= form_tag('/home/create', :remote => "true") do -%>
+  <b><%= label_tag(:status, "What's happening? (140 characters)", :class => "doing") %></b> <br />
+  <%= text_area_tag(:status, nil, :size=> "60x4") %> <br/>
+  <%= submit_tag("Update") %>
+<% end -%>
+<% end %>
+
