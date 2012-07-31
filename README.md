@@ -1,4 +1,4 @@
 hummer
 ======
 
-simple twitter web app on openshift cloud
+Too simple twitter web app on openshift cloud.
