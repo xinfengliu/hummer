@@ -2,7 +2,9 @@ hummer
 ======
 
 Too simple twitter web app on openshift cloud. 
-Requires ruby 1.9 and rails 3.x
+
+Requires ruby 1.9 and rails 3.2.x.
+
 Support proxy (when you don't deploy it in the public cloud).
 
 ###Usage###
