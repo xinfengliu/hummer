@@ -1,4 +1,3 @@
-source 'http://mirror1.prod.rhcloud.com/mirror/ruby/'
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.7'
@@ -41,3 +40,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+# This version needs to be hardcoded for OpenShift compatability
+gem 'thor', '= 0.14.6'
